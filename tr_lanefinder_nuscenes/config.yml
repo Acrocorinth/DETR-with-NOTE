@@ -1,0 +1,55 @@
+backbone_ckpt_path: /home/users/minghui.qin/STSU/pretrained/deeplab.pth
+batch_in_scene: 1
+batch_size: 1
+crop_lines: true
+delete_lines: false
+distribute: false
+focal_length: 1260.0
+gen_line_label_root: /home/users/minghui.qin/STSU/nuscenes_test/v1.0-mini/lines
+gen_loc_dict_path: /home/users/minghui.qin/STSU/nuscenes_test/vis_loc_dict.npy
+gpus:
+- 2
+- 3
+image_size:
+- 800
+- 448
+img_size:
+- 800
+- 448
+line_label_root: /home/users/minghui.qin/STSU/nuscenes_test/v1.0-mini/lines
+load_original_ckpt: false
+load_pretrained_backbone: true
+loc_dict_path: /home/users/minghui.qin/STSU/nuscenes_test/vis_loc_dict.npy
+log_interval: 50
+logdir: /home/users/minghui.qin/STSU/log
+map_extents:
+- -25.0
+- 1.0
+- 25.0
+- 50.0
+map_resolution: 0.25
+num_epochs: 300
+num_workers: 4
+nusc_num_object_class: 10
+nusc_root: /horizon-bucket/aidi_public_data/nuScenes/origin/
+nuscenes_version: v1.0-mini
+patch_size:
+- 800
+- 448
+polyrnn_feat_side: 50
+reset_confusion_interval: 2000
+resolution: 0.25
+rnn_size:
+- 49
+- 50
+static_threshold: 0.7
+stats_interval: 10
+tfm_channels: 64
+train_dataset: nuscenes
+train_split: train
+val_split: val
+vis_interval: 1000
+ymax: 4
+ymin: -2
+zoom_augment_prob: 0.0
+zoom_sampling_dict_path: /cluster/work/cvl/cany/lanefinder/zoom_sampling_dict.npy
